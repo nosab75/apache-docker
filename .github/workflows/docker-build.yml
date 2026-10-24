@@ -7,12 +7,12 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # Environnement d'exécution
+    runs-on: ubuntu-24.04  # Environnement d'exécution
 
     steps:
       # Étape 1 : Checkout du code
       - name: Checkout code
-        uses: actions/checkout@v4  # Mettre à jour à v4
+        uses: actions/checkout@v6  # Mettre à jour à v6
 
       # Étape 2 : Log in to Docker Hub
       - name: Log in to Docker Hub
